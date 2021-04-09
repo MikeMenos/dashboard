@@ -1,0 +1,154 @@
+.navbar {
+  background: #ffffff;
+  grid-area: nav;
+  height: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  border-bottom: 1px solid lightgray;
+  border: none;
+}
+
+.navbar__left {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9999;
+}
+
+.nav_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_icon > i {
+  font-size: 26px;
+  color: #a5aaad;
+  cursor: pointer;
+}
+
+#search-icon {
+  color: #a5aaad;
+  position: absolute;
+  left: 16.3%;
+}
+
+#search-icon_closed {
+  color: #a5aaad;
+  position: absolute;
+  left: 9%;
+}
+
+.form-control {
+  border-radius: 15px;
+  padding: 9px 9px 9px 35px;
+  background-color: #f5f5f8;
+  border: none;
+  margin-left: 18px;
+}
+
+input,
+input::placeholder {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #a5aaad;
+}
+
+input:focus {
+  outline: none;
+}
+.navbar__left > a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #a5aaad;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.navbar__left .active_link {
+  color: #265acc;
+  border-bottom: 3px solid #265acc;
+  padding-bottom: 12px;
+}
+
+.navbar__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__right > a {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar__right > a > i {
+  color: #a5aaad;
+  font-size: 16px;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
+  padding: 7px;
+}
+
+.navbar__right span {
+  font-size: 15px;
+  color: grey;
+}
+
+#avatar {
+  width: 4%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #search-icon_closed {
+    left: 14%;
+  }
+  #search-icon {
+    left: 25%;
+  }
+
+  #avatar {
+    width: 5%;
+  }
+
+  #popper {
+    width: 22% !important;
+    left: 0% !important;
+  }
+}
+
+@media only screen and (max-width: 978px) {
+  .nav_icon {
+    display: inline;
+  }
+  .form-control {
+    display: none;
+  }
+
+  #avatar {
+    width: 5%;
+  }
+
+  #popper {
+    width: 43% !important;
+    top: 5% !important;
+    left: 60% !important;
+  }
+
+  #namebutton {
+    display: none;
+  }
+  #search-icon {
+    display: none;
+  }
+  #search-icon_closed {
+    left: 23%;
+    top: 3.5%;
+  }
+}

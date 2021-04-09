@@ -1,0 +1,226 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 2%;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 6%;
+}
+
+.welcome-message {
+  position: absolute;
+  top: 32%;
+}
+
+.welcome-message h3 {
+  color: #5468c9;
+  font-weight: 600;
+}
+
+#signin-message {
+  margin-top: 5px;
+  color: #969aa2;
+}
+
+.username-area {
+  position: absolute;
+  top: 42%;
+  width: 88%;
+}
+
+.password-area {
+  position: absolute;
+  top: 52%;
+  width: 88%;
+}
+
+.password-area-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  color: #4e555c;
+  font-weight: 600;
+}
+
+#forgotten-password a {
+  text-decoration: none;
+  color: #969aa2;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: solid 1.5px lightgray;
+  margin-top: 10px;
+}
+
+.remember-area {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 60%;
+  margin-left: -10px;
+}
+
+#checkbox {
+  display: block;
+}
+
+#remember {
+  display: inline-block;
+}
+
+#login-button {
+  position: absolute;
+  top: 68%;
+  width: 88%;
+  padding: 8px;
+}
+
+.socials-signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 76%;
+  width: 88%;
+}
+
+#signwith {
+  color: #4e555c;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.footer {
+  position: absolute;
+  top: 95%;
+  font-size: 12px;
+  color: #4e555c;
+  text-align: center;
+  width: 30%;
+}
+
+.right-container {
+  width: 70%;
+  background: linear-gradient(to right, #ea6853, #ef896c);
+}
+
+@media only screen and (max-width: 1440px) {
+  .password-area {
+    top: 55%;
+  }
+
+  .remember-area {
+    top: 65%;
+  }
+
+  #login-button {
+    top: 72%;
+  }
+
+  .socials-signin {
+    top: 81%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .username-area {
+    top: 40%;
+  }
+
+  .password-area {
+    top: 48%;
+  }
+
+  .remember-area {
+    top: 56%;
+  }
+
+  #login-button {
+    top: 64%;
+  }
+}
+
+@media only screen and (max-width: 978px) {
+  .login-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+
+  .left-container {
+    height: 85vh;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    top: 2%;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .welcome-message {
+    top: 22%;
+  }
+
+  .username-area {
+    width: 90%;
+    top: 34%;
+  }
+
+  .password-area {
+    width: 90%;
+    top: 48%;
+  }
+
+  .remember-area {
+    margin-left: -10px;
+    top: 60%;
+  }
+
+  #login-button {
+    width: 90%;
+    top: 68%;
+  }
+
+  .socials-signin {
+    width: 90%;
+    top: 80%;
+  }
+
+  .footer {
+    width: 100%;
+    left: 0%;
+    top: 96%;
+  }
+
+  .right-container {
+    height: 15vh;
+    width: 100%;
+  }
+}

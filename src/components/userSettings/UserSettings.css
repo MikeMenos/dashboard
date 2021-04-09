@@ -1,0 +1,140 @@
+main {
+  background: #f3f4f6;
+  grid-area: main;
+  overflow-y: auto;
+}
+
+.main__container {
+  padding: 20px 35px;
+}
+
+.main__title {
+  display: flex;
+  align-items: center;
+}
+
+.main__title h2 {
+  font-size: 24px;
+  color: #2e4a66;
+  margin-bottom: 5px;
+}
+
+.main__title h3 {
+  font-size: 18px;
+  color: #2e4a66;
+  margin-bottom: 5px;
+}
+
+.main__title h4 {
+  font-size: 16px;
+  color: #2e4a66;
+  margin-bottom: 5px;
+}
+
+#input-text {
+  font-size: 14px;
+  color: #2e4a66;
+}
+
+.main__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  padding: 25px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 300px;
+  padding: 25px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+  gap: 15px;
+}
+
+.new-confirm-password-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+}
+
+.old-password-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.new-password-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.confirm-password-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.input-field {
+  width: 120%;
+  padding: 5px;
+  border-radius: 6px;
+  border: solid 1.5px lightgray;
+}
+
+.card_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 20px;
+  padding: 10px;
+  gap: 8px;
+}
+
+.card-inner .text {
+  color: #f3f4f6;
+}
+
+.card_inner > span {
+  font-size: 15px;
+  color: grey;
+}
+
+@media only screen and (max-width: 978px) {
+  .card2 {
+    height: 350px;
+  }
+
+  .new-confirm-password-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+}

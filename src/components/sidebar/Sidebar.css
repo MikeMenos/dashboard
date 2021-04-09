@@ -1,0 +1,239 @@
+#sidebar {
+  background: white;
+  grid-area: sidebar;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#sidebarIcon {
+  float: right;
+  display: none;
+  color: black;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  z-index: 10;
+}
+
+.sidebar__menu_closed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.sidebar__img {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background: linear-gradient(to right, #ea6853, #ef896c);
+  width: 100%;
+}
+
+.sidebar__img img {
+  width: 57%;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.sidebar__img_closed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #ea6853, #ef896c);
+
+  height: 7.8vh;
+}
+
+.sidebar__img_closed img {
+  width: 33%;
+  object-fit: contain;
+  margin-left: 30px;
+}
+
+.sidebar__link {
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.sidebar__link_closed {
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.sidebar__link_closed span {
+  display: none;
+}
+
+.sidebar__link > a {
+  text-decoration: none;
+  color: #a5aaad;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sidebar__link > a > i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: grey;
+}
+
+.sidebar__link_closed > a > i {
+  font-size: 25px;
+  color: grey;
+}
+
+.sidebar__link_closed > a > i:hover {
+  font-size: 25px;
+  color: #ea6853;
+}
+
+.sidebar__logout {
+  margin-top: 20px;
+  padding: 10px;
+  color: #e65061;
+}
+
+.sidebar__logout > a {
+  text-decoration: none;
+  color: #e65061;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar__logout > i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar_responsive_closed {
+  display: inline !important;
+  z-index: 9998;
+  left: -1.5% !important;
+  transition: none;
+  position: absolute;
+  width: 7%;
+}
+
+.sidebar_responsive {
+  display: inline !important;
+  z-index: 9998;
+  left: 0 !important;
+  transition: none;
+  position: absolute;
+  width: 12%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sidebar_responsive {
+    display: inline !important;
+    z-index: 9998;
+    left: 0 !important;
+    position: absolute;
+    width: 17%;
+  }
+
+  .sidebar_responsive_closed {
+    display: inline !important;
+    z-index: 9998;
+    left: -1.5% !important;
+    transition: none;
+    position: absolute;
+    width: 8%;
+  }
+
+  .sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .sidebar__menu_closed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  .sidebar__img_closed {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to right, #ea6853, #ef896c);
+    height: 5.4vh;
+    padding: 20px;
+  }
+
+  .sidebar__img_closed img {
+    width: 73%;
+    object-fit: contain;
+    margin-left: 30px;
+  }
+
+  .sidebar__img {
+    width: 129%;
+  }
+}
+
+@media only screen and (max-width: 978px) {
+  #sidebar {
+    display: none;
+  }
+  .sidebar_responsive {
+    width: 60%;
+    margin-top: 60px;
+  }
+
+  .sidebar_responsive_closed {
+    display: inline !important;
+    z-index: 9998;
+    left: -8.5% !important;
+    transition: none;
+    position: absolute;
+    width: 8%;
+  }
+
+  .sidebar__menu_closed {
+    display: none;
+  }
+
+  .sidebar__img_closed {
+    display: none;
+  }
+
+  .sidebar__img_closed img {
+    display: none;
+  }
+
+  .sidebar__img {
+    display: none;
+  }
+
+  .sidebar__img img {
+    display: none;
+  }
+
+  #sidebarIcon {
+    display: block;
+  }
+}
